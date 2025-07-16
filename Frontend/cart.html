@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Shopping Cart</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        /* Custom styling for table headers and cells */
+        th, td {
+            padding: 12px 16px;
+            vertical-align: middle;
+        }
+        th {
+            font-weight: 600;
+            color: #4a5568; /* Gray-700 */
+            text-transform: uppercase;
+            font-size: 0.875rem; /* text-sm */
+        }
+        td {
+            color: #2d3748; /* Gray-800 */
+        }
+        .remove-btn {
+            transition: color 0.2s ease-in-out;
+        }
+        .remove-btn:hover {
+            color: #c53030; /* Red-700 */
+        }
+        .quantity-input {
+            width: 70px; /* Adjusted width for quantity input */
+            text-align: center;
+            padding: 6px 8px; /* Adjusted padding */
+            border-radius: 6px; /* Slightly rounded corners */
+            border: 1px solid #cbd5e0; /* Gray-300 */
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .quantity-input:focus {
+            outline: none;
+            border-color: #4299e1; /* Blue-500 */
+            box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5); /* Blue-500 ring */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center py-8">
+
+    <div class="max-w-4xl w-full mx-auto bg-white p-8 rounded-xl shadow-2xl">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-8 text-center">Your Shopping Cart</h1>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="border-b-2 border-gray-300">
+                        <th class="py-3 px-4">Product</th>
+                        <th class="py-3 px-4">Price</th>
+                        <th class="py-3 px-4">Quantity</th>
+                        <th class="py-3 px-4">Total</th>
+                        <th class="py-3 px-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be inserted by cart.js -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="empty-cart-message" class="hidden text-center py-10 text-gray-600">
+            <p class="text-2xl font-semibold mb-4">Your cart is empty!</p>
+            <p class="text-lg">Looks like you haven't added anything to your cart yet.</p>
+            <a href="index.html" class="mt-6 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Start Shopping
+            </a>
+        </div>
+
+        <div class="flex justify-between items-center mt-8 pt-6 border-t-2 border-gray-200">
+            <a href="index.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">
+                Continue Shopping
+            </a>
+            <div class="text-right">
+                <span class="text-2xl font-bold text-gray-900">Grand Total: ₹<span id="cart-total">0.00</span></span>
+                <button class="ml-4 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- The cart.js script will handle rendering and logic -->
+    <script src="cart.js"></script>
+</body>
+</html>

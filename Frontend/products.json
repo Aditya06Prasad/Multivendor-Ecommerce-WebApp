@@ -1,0 +1,507 @@
+[
+  {
+    "id": "oneplus-smartphone",
+    "name": "OnePlus Smartphone",
+    "category": "Tech",
+    "price": 35000,
+    "image": "prdctImgs/oneplus.jpg",
+    "details": [
+      "Brand: OnePlus",
+      "Operating System: OxygenOS 15, Android 15",
+      "RAM: 8 GB",
+      "Storage: 128 GB",
+      "Screen Size: 6.77 Inches"
+    ],
+    "description": "Powerful smartphone with OxygenOS 15 and Android 15, 8GB RAM, 128GB storage, and a 6.77-inch display. Ideal for performance and everyday use."
+  },
+  {
+    "id": "hp-pavilion-laptop",
+    "name": "HP Pavilion Laptop",
+    "category": "Electronics",
+    "price": 62499,
+    "image": "prdctImgs/hp-pavilion-laptop.jpg",
+    "details": [
+      "Brand: HP",
+      "Processor: Intel i5 12th Gen",
+      "RAM: 16 GB",
+      "Storage: 512 GB SSD",
+      "Screen Size: 15.6 Inches"
+    ],
+    "description": "High-performance laptop featuring Intel i5 12th Gen processor, 16GB RAM, 512GB SSD storage, and a 15.6-inch screen. Perfect for work and entertainment."
+  },
+  {
+    "id": "nike-air-max-shoes",
+    "name": "Nike Air Max Shoes",
+    "category": "Shoes",
+    "price": 8999,
+    "image": "prdctImgs/nike-air-max-shoes.jpg",
+    "details": [
+      "Brand: Nike",
+      "Type: Running Shoes",
+      "Material: Mesh Fabric",
+      "Color: Black/White",
+      "Sizes: 6 to 11"
+    ],
+    "description": "Comfortable and stylish running shoes made with mesh fabric in black/white. Available in sizes 6 to 11, offering excellent support and cushioning."
+  },
+  {
+    "id": "dell-xps-15",
+    "name": "Dell XPS 15",
+    "category": "Tech",
+    "price": 125000,
+    "image": "prdctImgs/dell-xps-15.jpg",
+    "details": [
+      "Intel i7 Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "15.6\" 4K Display"
+    ],
+    "description": "Powerful Dell XPS 15 laptop with Intel i7 processor, 16GB RAM, 512GB SSD, and a 15.6\" 4K Display. Ideal for professional use."
+  },
+  {
+    "id": "iphone-15-pro",
+    "name": "iPhone 15 Pro",
+    "category": "Tech",
+    "price": 85000,
+    "image": "prdctImgs/iphone-15-pro.jpg",
+    "details": [
+      "A17 Bionic Chip",
+      "Pro Camera System",
+      "Dynamic Island",
+      "6.1\" Super Retina XDR"
+    ],
+    "description": "The latest iPhone 15 Pro, featuring the A17 Bionic Chip, a Pro Camera System, Dynamic Island, and a 6.1\" Super Retina XDR display."
+  },
+  {
+    "id": "sony-wh-1000xm5",
+    "name": "Sony WH-1000XM5 Headphones",
+    "category": "Electronics",
+    "price": 29999,
+    "image": "prdctImgs/sony-wh-1000xm5.jpg",
+    "details": [
+      "Noise Cancelling",
+      "30-Hour Battery",
+      "Comfort Fit",
+      "Hi-Res Audio"
+    ],
+    "description": "Sony WH-1000XM5 Noise Cancelling Headphones with a 30-hour battery life and comfortable fit, offering Hi-Res Audio quality."
+  },
+  {
+    "id": "apple-watch-series-9",
+    "name": "Apple Watch Series 9",
+    "category": "Electronics",
+    "price": 35000,
+    "image": "prdctImgs/apple-watch-series-9.jpg",
+    "details": [
+      "Health Tracking",
+      "GPS Built-in",
+      "Always-On Retina",
+      "Water Resistant"
+    ],
+    "description": "Apple Watch Series 9 with advanced health tracking, built-in GPS, an Always-On Retina display, and water resistance."
+  },
+  {
+    "id": "samsung-galaxy-tab-s9",
+    "name": "Samsung Galaxy Tab S9",
+    "category": "Electronics",
+    "price": 65000,
+    "image": "prdctImgs/samsung-galaxy-tab-s9.jpg",
+    "details": [
+      "Dynamic AMOLED 2X",
+      "Snapdragon 8 Gen 2",
+      "S Pen Included",
+      "IP68 Water Resistant"
+    ],
+    "description": "Samsung Galaxy Tab S9 featuring a Dynamic AMOLED 2X display, Snapdragon 8 Gen 2 processor, included S Pen, and IP68 water resistance."
+  },
+  {
+    "id": "the-alchemist",
+    "name": "The Alchemist by Paulo Coelho",
+    "category": "Books",
+    "price": 350,
+    "image": "prdctImgs/the-alchemist.jpg",
+    "details": [
+      "Genre: Philosophical Fiction",
+      "Author: Paulo Coelho",
+      "Pages: 163",
+      "Language: English"
+    ],
+    "description": "A philosophical fiction novel by Paulo Coelho, exploring themes of destiny and self-discovery. A captivating read for all ages."
+  },
+  {
+    "id": "atomic-habits",
+    "name": "Atomic Habits by James Clear",
+    "category": "Books",
+    "price": 499,
+    "image": "prdctImgs/atomic-habits.jpg",
+    "details": [
+      "Genre: Self-Help",
+      "Author: James Clear",
+      "Pages: 320",
+      "Practical strategies"
+    ],
+    "description": "Atomic Habits by James Clear offers practical strategies for building good habits and breaking bad ones, leading to remarkable results."
+  },
+  {
+    "id": "the-silent-patient",
+    "name": "The Silent Patient by Alex Michaelides",
+    "category": "Books",
+    "price": 399,
+    "image": "prdctImgs/the-silent-patient.jpg",
+    "details": [
+      "Genre: Psychological Thriller",
+      "Author: Alex Michaelides",
+      "Pages: 336",
+      "Gripping plot"
+    ],
+    "description": "A gripping psychological thriller, 'The Silent Patient' by Alex Michaelides keeps you on the edge of your seat with its intricate plot."
+  },
+  {
+    "id": "rich-dad-poor-dad",
+    "name": "Rich Dad Poor Dad by Robert Kiyosaki",
+    "category": "Books",
+    "price": 450,
+    "image": "prdctImgs/rich-dad-poor-dad.jpg",
+    "details": [
+      "Genre: Personal Finance",
+      "Author: Robert T. Kiyosaki",
+      "Pages: 207",
+      "Financial literacy"
+    ],
+    "description": "Rich Dad Poor Dad by Robert Kiyosaki is a foundational personal finance book that challenges traditional views on money and investing."
+  },
+  {
+    "id": "harry-potter-sorcerer",
+    "name": "Harry Potter and the Sorcerer's Stone",
+    "category": "Books",
+    "price": 599,
+    "image": "prdctImgs/harry-potter-sorcerer.jpg",
+    "details": [
+      "Genre: Fantasy",
+      "Author: J.K. Rowling",
+      "Pages: 309",
+      "First in series"
+    ],
+    "description": "The first book in the magical Harry Potter series by J.K. Rowling, a captivating fantasy novel for all ages."
+  },
+  {
+    "id": "fenty-foundation",
+    "name": "Fenty Beauty Pro Filt'r Soft Matte Longwear Foundation",
+    "category": "Makeups",
+    "price": 3200,
+    "image": "prdctImgs/fenty-foundation.jpg",
+    "details": [
+      "50 shades available",
+      "Oil-free formula",
+      "Medium to full coverage",
+      "Matte finish"
+    ],
+    "description": "Fenty Beauty Pro Filt'r Soft Matte Longwear Foundation, offering 50 shades with an oil-free, medium to full coverage, and a matte finish."
+  },
+  {
+    "id": "mac-ruby-woo",
+    "name": "MAC Retro Matte Lipstick - Ruby Woo",
+    "category": "Makeups",
+    "price": 2100,
+    "image": "prdctImgs/mac-ruby-woo.jpg",
+    "details": [
+      "Long-lasting formula",
+      "Non-drying matte finish",
+      "Iconic shade",
+      "Highly pigmented"
+    ],
+    "description": "MAC Retro Matte Lipstick in Ruby Woo, known for its long-lasting, non-drying matte finish and highly pigmented iconic red shade."
+  },
+  {
+    "id": "urban-decay-naked",
+    "name": "Urban Decay Naked Eyeshadow Palette",
+    "category": "Makeups",
+    "price": 4500,
+    "image": "prdctImgs/urban-decay-naked.jpg",
+    "details": [
+      "Mix of mattes and shimmers",
+      "Highly blendable",
+      "Long-lasting wear",
+      "Cruelty-free"
+    ],
+    "description": "The Urban Decay Naked Eyeshadow Palette features a mix of highly blendable mattes and shimmers for long-lasting wear, and is cruelty-free."
+  },
+  {
+    "id": "maybelline-lash-sensational",
+    "name": "Maybelline Lash Sensational Mascara",
+    "category": "Makeups",
+    "price": 650,
+    "image": "prdctImgs/maybelline-lash-sensational.jpg",
+    "details": [
+      "Volumizing and lengthening",
+      "Unique fanning brush",
+      "No clumps or smudges",
+      "Ophthalmologist tested"
+    ],
+    "description": "Maybelline Lash Sensational Mascara provides volumizing and lengthening effects with a unique fanning brush, ensuring no clumps or smudges."
+  },
+  {
+    "id": "nars-orgasm-blush",
+    "name": "NARS Blush - Orgasm",
+    "category": "Makeups",
+    "price": 2900,
+    "image": "prdctImgs/nars-orgasm-blush.jpg",
+    "details": [
+      "Silky, superfine micronized powder",
+      "Buildable color",
+      "Natural, healthy-looking flush",
+      "Iconic shade"
+    ],
+    "description": "NARS Blush in Orgasm, a silky, superfine micronized powder that provides buildable color for a natural, healthy-looking flush."
+  },
+  {
+    "id": "men-tshirt-graphic",
+    "name": "Men's Cotton Graphic T-Shirt",
+    "category": "Clothes",
+    "price": 899,
+    "image": "prdctImgs/men-tshirt-graphic.jpg",
+    "details": [
+      "100% Premium Cotton",
+      "Regular Fit",
+      "Durable Print",
+      "Machine Washable"
+    ],
+    "description": "A comfortable men's cotton graphic t-shirt made from 100% premium cotton, featuring a regular fit and durable print."
+  },
+  {
+    "id": "women-skinny-jeans",
+    "name": "Women's High-Rise Skinny Jeans",
+    "category": "Clothes",
+    "price": 1999,
+    "image": "prdctImgs/women-skinny-jeans.jpg",
+    "details": [
+      "Stretch Denim Fabric",
+      "High-Rise Waist",
+      "Skinny Fit",
+      "Classic 5-pocket style"
+    ],
+    "description": "Women's High-Rise Skinny Jeans crafted from stretch denim fabric, featuring a high-rise waist, skinny fit, and classic 5-pocket style."
+  },
+  {
+    "id": "floral-midi-dress",
+    "name": "Women's Floral Print Midi Dress",
+    "category": "Clothes",
+    "price": 2499,
+    "image": "prdctImgs/floral-midi-dress.jpg",
+    "details": [
+      "Lightweight Fabric",
+      "Midi Length",
+      "V-Neck Design",
+      "Comfortable Fit"
+    ],
+    "description": "A beautiful Women's Floral Print Midi Dress made from lightweight fabric, featuring a midi length, V-neck design, and a comfortable fit."
+  },
+  {
+    "id": "unisex-denim-jacket",
+    "name": "Unisex Classic Denim Jacket",
+    "category": "Clothes",
+    "price": 2999,
+    "image": "prdctImgs/unisex-denim-jacket.jpg",
+    "details": [
+      "Durable Denim",
+      "Button Closure",
+      "Multiple Pockets",
+      "Versatile Outerwear"
+    ],
+    "description": "A versatile Unisex Classic Denim Jacket made from durable denim, featuring button closure and multiple pockets, perfect as outerwear."
+  },
+  {
+    "id": "unisex-hoodie",
+    "name": "Unisex Comfortable Fleece Hoodie",
+    "category": "Clothes",
+    "price": 1499,
+    "image": "prdctImgs/unisex-hoodie.jpg",
+    "details": [
+      "Soft Fleece Lining",
+      "Adjustable Drawstring Hood",
+      "Kangaroo Pocket",
+      "Ribbed Cuffs and Hem"
+    ],
+    "description": "Unisex Comfortable Fleece Hoodie with a soft fleece lining, adjustable drawstring hood, kangaroo pocket, and ribbed cuffs and hem."
+  },
+  {
+    "id": "nike-air-zoom",
+    "name": "Nike Air Zoom Pegasus 40",
+    "category": "Shoes",
+    "price": 9999,
+    "image": "prdctImgs/nike-air-zoom.jpg",
+    "details": [
+      "Responsive cushioning",
+      "Breathable mesh upper",
+      "Durable rubber outsole",
+      "Ideal for road running"
+    ],
+    "description": "Nike Air Zoom Pegasus 40 running shoes with responsive cushioning, breathable mesh upper, and durable rubber outsole, ideal for road running."
+  },
+  {
+    "id": "adidas-superstar",
+    "name": "Adidas Superstar",
+    "category": "Shoes",
+    "price": 6499,
+    "image": "prdctImgs/adidas-superstar.jpg",
+    "details": [
+      "Classic shell toe design",
+      "Leather upper",
+      "Rubber cupsole",
+      "Versatile casual shoe"
+    ],
+    "description": "The iconic Adidas Superstar sneakers feature a classic shell toe design, leather upper, and rubber cupsole, making them a versatile casual shoe."
+  },
+  {
+    "id": "bata-oxford",
+    "name": "Bata Classic Oxford",
+    "category": "Shoes",
+    "price": 3499,
+    "image": "prdctImgs/bata-oxford.jpg",
+    "details": [
+      "Genuine leather",
+      "Lace-up closure",
+      "Comfortable insole",
+      "Perfect for office wear"
+    ],
+    "description": "Bata Classic Oxford shoes made from genuine leather with a lace-up closure and comfortable insole, perfect for office wear."
+  },
+  {
+    "id": "crocs-classic",
+    "name": "Crocs Classic Clog",
+    "category": "Shoes",
+    "price": 2499,
+    "image": "prdctImgs/crocs-classic.jpg",
+    "details": [
+      "Lightweight and buoyant",
+      "Ventilation ports",
+      "Pivoting heel straps",
+      "Easy to clean"
+    ],
+    "description": "Crocs Classic Clogs are lightweight, buoyant, and easy to clean, featuring ventilation ports and pivoting heel straps for comfort."
+  },
+  {
+    "id": "timberland-boot",
+    "name": "Timberland Premium Boot",
+    "category": "Shoes",
+    "price": 14999,
+    "image": "prdctImgs/timberland-boot.jpg",
+    "details": [
+      "Waterproof construction",
+      "Premium leather upper",
+      "Padded collar",
+      "Rugged lug outsole"
+    ],
+    "description": "Timberland Premium Boots feature waterproof construction, a premium leather upper, padded collar, and rugged lug outsole for durability."
+  },
+  {
+    "id": "samsung-smart-stv",
+    "name": "Samsung Crystal 4K Smart TV (55 inch)",
+    "category": "Electronics",
+    "price": 45000,
+    "image": "prdctImgs/samsung-smart-stv.jpg",
+    "details": [
+      "Crystal Processor 4K",
+      "Smart TV Powered by Tizen",
+      "Multiple Voice Assistants",
+      "Slim Design"
+    ],
+    "description": "Samsung Crystal 4K Smart TV (55 inch) powered by Tizen, featuring a Crystal Processor 4K, multiple voice assistants, and a slim design."
+  },
+  {
+    "id": "ps5-console",
+    "name": "Sony PlayStation 5 Console",
+    "category": "Electronics",
+    "price": 54990,
+    "image": "prdctImgs/ps5-console.jpg",
+    "details": [
+      "Ultra-High Speed SSD",
+      "Ray Tracing",
+      "4K-TV Gaming",
+      "Haptic Feedback"
+    ],
+    "description": "The Sony PlayStation 5 Console offers ultra-high speed SSD, ray tracing, 4K-TV gaming, and haptic feedback for an immersive experience."
+  },
+  {
+    "id": "amazon-echo-dot",
+    "name": "Amazon Echo Dot (5th Gen)",
+    "category": "Electronics",
+    "price": 3999,
+    "image": "prdctImgs/amazon-echo-dot.jpg",
+    "details": [
+      "Improved audio experience",
+      "Voice control with Alexa",
+      "Smart home hub",
+      "Compact design"
+    ],
+    "description": "Amazon Echo Dot (5th Gen) with an improved audio experience, voice control with Alexa, smart home hub capabilities, and a compact design."
+  },
+  {
+    "id": "canon-eos-200d",
+    "name": "Canon EOS 200D II DSLR Camera",
+    "category": "Electronics",
+    "price": 58999,
+    "image": "prdctImgs/canon-eos-200d.jpg",
+    "details": [
+      "24.1 MP APS-C CMOS Sensor",
+      "Dual Pixel CMOS AF",
+      "4K Video Recording",
+      "Vari-angle Touch Screen LCD"
+    ],
+    "description": "Canon EOS 200D II DSLR Camera features a 24.1 MP APS-C CMOS Sensor, Dual Pixel CMOS AF, 4K video recording, and a vari-angle touch screen LCD."
+  },
+  {
+    "id": "dji-mini-3",
+    "name": "DJI Mini 3 Pro Drone",
+    "category": "Electronics",
+    "price": 69999,
+    "image": "prdctImgs/dji-mini-3.jpg",
+    "details": [
+      "Under 249 g",
+      "Tri-Directional Obstacle Sensing",
+      "4K HDR Video",
+      "Extended Battery Life"
+    ],
+    "description": "DJI Mini 3 Pro Drone, weighing under 249g, features tri-directional obstacle sensing, 4K HDR video, and extended battery life."
+  },
+  {
+    "id": "item1",
+    "name": "Smartphone X",
+    "category": "Electronics",
+    "price": 25000,
+    "image": "prdctImgs/vivo-phone.jpg",
+    "description": "A powerful smartphone with a great camera. Long battery life."
+  },
+  {
+    "id": "item2",
+    "name": "Designer T-Shirt",
+    "category": "Clothes",
+    "price": 1200,
+    "image": "prdctImgs/t-shirt.jpg",
+    "description": "Comfortable cotton t-shirt for daily wear. Available in multiple colors."
+  },
+  {
+    "id": "item3",
+    "name": "Book: The Future",
+    "category": "Books",
+    "price": 750,
+    "image": "prdctImgs/the-book.jpg",
+    "description": "An insightful read on technology and society. Award-winning author."
+  },
+  {
+    "id": "item4",
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 4500,
+    "image": "prdctImgs/headphone.jpg",
+    "description": "High-quality sound with noise cancellation. Perfect for travel."
+  },
+  {
+    "id": "item7",
+    "name": "Smartwatch Z",
+    "category": "Tech",
+    "price": 12000,
+    "image": "prdctImgs/smartwatch.jpg",
+    "description": "Track your fitness and receive notifications. Waterproof design."
+  } 
+]

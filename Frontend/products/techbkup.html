@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VendorVerse - Customer Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Ensure Inter font is applied */
+        }
+        .fade {
+            transition: opacity 0.5s ease-in-out;
+        }
+        .product-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .add-to-cart-button {
+            transition: background-color 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-gray-900 text-white p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+            <span class="text-2xl font-bold text-orange-400">VendorVerse</span>
+            <div class="text-sm hidden sm:block">🕒 <span id="currentTime">--:--:--</span></div>
+        </div>
+
+        <div class="flex items-center w-full max-w-2xl mx-0 sm:mx-4 mt-2 sm:mt-0">
+            <select id="categoryDropdown" class="p-2 bg-gray-200 text-black rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                <option value="">All Categories</option>
+                <option value="Tech">Tech</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Makeups">Makeups</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Books">Books</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Search VendorVerse..." class="w-full p-2 text-black border-y border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <button class="bg-yellow-400 text-black p-2 rounded-r-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400">🔍</button>
+        </div>
+
+        <div class="flex items-center gap-4 text-sm mt-2 sm:mt-0">
+            <div class="hidden sm:block">
+                <span>Hello, Aditya</span><br/>
+                <strong>Account & Lists</strong>
+            </div>
+            <div class="hidden sm:block">
+                <span>Returns</span><br/>
+                <strong>& Orders</strong>
+            </div>
+            <a href="cart.html" class="flex items-center hover:text-orange-400 transition-colors duration-200" target="_blank">
+                <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M3 3h2l.4 2M7 13h10l4-8H5.4"></path>
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                </svg>
+                <span class="ml-1">Cart</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="relative w-full max-w-7xl mx-auto mt-6 overflow-hidden rounded-lg shadow-xl">
+        <div class="relative h-64">
+            <img src="assets/images/banner1.jpg" class="absolute w-full h-full object-cover fade slide" style="display: block;" onerror="this.onerror=null;this.src='https://placehold.co/1200x300/CCCCCC/333333?text=Banner+1';">
+            <img src="assets/images/banner2.jpg" class="absolute w-full h-full object-cover fade slide" style="display: none;" onerror="this.onerror=null;this.src='https://placehold.co/1200x300/BBBBBB/333333?text=Banner+2';">
+            <img src="assets/images/banner3.jpg" class="absolute w-full h-full object-cover fade slide" style="display: none;" onerror="this.onerror=null;this.src='https://placehold.co/1200x300/AAAAAA/333333?text=Banner+3';">
+        </div>
+    </section>
+
+    <section class="mt-10 px-6">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">Shop by Category</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <a href="products/tech.html" target="_blank" rel="noopener noreferrer" class="block transform transition hover:scale-105 hover:shadow-lg bg-white p-4 text-center rounded-xl shadow-md">
+                <img src="assets/images/tech.png" class="w-20 h-20 object-contain mx-auto mb-2" alt="Tech" onerror="this.onerror=null;this.src='https://placehold.co/80x80/E0E0E0/333333?text=Tech';">
+                <p class="mt-2 font-medium text-gray-800">Tech</p>
+            </a>
+            <a href="products/clothes.html" target="_blank" rel="noopener noreferrer" class="block transform transition hover:scale-105 hover:shadow-lg bg-white p-4 text-center rounded-xl shadow-md">
+                <img src="assets/images/clothes.png" class="w-20 h-20 object-contain mx-auto mb-2" alt="Clothes" onerror="this.onerror=null;this.src='https://placehold.co/80x80/D0D0D0/333333?text=Clothes';">
+                <p class="mt-2 font-medium text-gray-800">Clothes</p>
+            </a>
+            <a href="products/makeup.html" target="_blank" rel="noopener noreferrer" class="block transform transition hover:scale-105 hover:shadow-lg bg-white p-4 text-center rounded-xl shadow-md">
+                <img src="assets/images/makeup.png" class="w-20 h-20 object-contain mx-auto mb-2" alt="Makeups" onerror="this.onerror=null;this.src='https://placehold.co/80x80/C0C0C0/333333?text=Makeups';">
+                <p class="mt-2 font-medium text-gray-800">Makeups</p>
+            </a>
+            <a href="products/shoes.html" target="_blank" rel="noopener noreferrer" class="block transform transition hover:scale-105 hover:shadow-lg bg-white p-4 text-center rounded-xl shadow-md">
+                <img src="assets/images/shoes.png" class="w-20 h-20 object-contain mx-auto mb-2" alt="Shoes" onerror="this.onerror=null;this.src='https://placehold.co/80x80/B0B0B0/333333?text=Shoes';">
+                <p class="mt-2 font-medium text-gray-800">Shoes</p>
+            </a>
+            <a href="products/electronics.html" target="_blank" rel="noopener noreferrer" class="block transform transition hover:scale-105 hover:shadow-lg bg-white p-4 text-center rounded-xl shadow-md">
+                <img src="assets/images/electronics.png" class="w-20 h-20 object-contain mx-auto mb-2" alt="Electronics" onerror="this.onerror=null;this.src='https://placehold.co/80x80/A0A0A0/333333?text=Electronics';">
+                <p class="mt-2 font-medium text-gray-800">Electronics</p>
+            </a>
+            <a href="products/books.html" target="_blank" rel="noopener noreferrer" class="block transform transition hover:scale-105 hover:shadow-lg bg-white p-4 text-center rounded-xl shadow-md">
+                <img src="assets/images/books.png" class="w-20 h-20 object-contain mx-auto mb-2" alt="Books" onerror="this.onerror=null;this.src='https://placehold.co/80x80/909090/333333?text=Books';">
+                <p class="mt-2 font-medium text-gray-800">Books</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="mt-10 px-6 mb-10">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">Featured Products</h2>
+
+        <div class="flex justify-end mb-6 px-0">
+            <label for="sort-by" class="mr-2 text-gray-700 font-medium">Sort by:</label>
+            <select id="sort-by" class="p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A-Z</option>
+                <option value="name-desc">Name: Z-A</option>
+            </select>
+        </div>
+
+        <div id="products-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+            <div class="product-card bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
+                 data-product-id="oneplus-smartphone"
+                 data-product-name="OnePlus Smartphone"
+                 data-product-price="35000"> <img src="assets/images/oneplus.jpg" alt="OnePlus" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x150/E0E0E0/333333?text=OnePlus';">
+                <div class="w-full">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">OnePlus Smartphone</h3>
+                    <p class="text-gray-700 text-sm mb-1">Brand: OnePlus</p>
+                    <p class="text-gray-700 text-sm mb-1">Operating System: OxygenOS 15, Android 15</p>
+                    <p class="text-gray-700 text-sm mb-1">RAM: 8 GB</p>
+                    <p class="text-gray-700 text-sm mb-1">Storage: 128 GB</p>
+                    <p class="text-gray-700 text-sm mb-3">Screen Size: 6.77 Inches</p>
+                    <div class="text-2xl font-bold text-green-600 mb-4">₹35,000</div> <button class="add-to-cart-button mt-6 px-6 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded-full font-semibold">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
+                 data-product-id="hp-pavilion-laptop"
+                 data-product-name="HP Pavilion Laptop"
+                 data-product-price="62499"> <img src="assets/images/laptop.jpg" alt="Laptop" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x150/D0D0D0/333333?text=Laptop';">
+                <div class="w-full">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">HP Pavilion Laptop</h3>
+                    <p class="text-gray-700 text-sm mb-1">Brand: HP</p>
+                    <p class="text-gray-700 text-sm mb-1">Processor: Intel i5 12th Gen</p>
+                    <p class="text-gray-700 text-sm mb-1">RAM: 16 GB</p>
+                    <p class="text-gray-700 text-sm mb-1">Storage: 512 GB SSD</p>
+                    <p class="text-gray-700 text-sm mb-3">Screen Size: 15.6 Inches</p>
+                    <div class="text-2xl font-bold text-green-600 mb-4">₹62,499</div> <button class="add-to-cart-button mt-6 px-6 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded-full font-semibold">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
+                 data-product-id="nike-air-max-shoes"
+                 data-product-name="Nike Air Max Shoes"
+                 data-product-price="8999"> <img src="assets/images/nike-shoes.jpg" alt="Nike Shoes" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x150/C0C0C0/333333?text=Nike+Shoes';">
+                <div class="w-full">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Nike Air Max Shoes</h3>
+                    <p class="text-gray-700 text-sm mb-1">Brand: Nike</p>
+                    <p class="text-gray-700 text-sm mb-1">Type: Running Shoes</p>
+                    <p class="text-gray-700 text-sm mb-1">Material: Mesh Fabric</p>
+                    <p class="text-gray-700 text-sm mb-1">Color: Black/White</p>
+                    <p class="text-gray-700 text-sm mb-3">Sizes: 6 to 11</p>
+                    <div class="text-2xl font-bold text-green-600 mb-4">₹8,999</div> <button class="add-to-cart-button mt-6 px-6 py-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded-full font-semibold">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-white text-center p-4 shadow-inner mt-10">
+        &copy; 2025 VendorVerse. All rights reserved.
+    </footer>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let index = 0;
+        setInterval(() => {
+            slides[index].style.display = "none";
+            index = (index + 1) % slides.length;
+            slides[index].style.display = "block";
+        }, 3000);
+    </script>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString();
+            document.getElementById("currentTime").textContent = timeStr;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+
+    <script>
+        document.getElementById("categoryDropdown").addEventListener("change", function () {
+            const value = this.value;
+            // If a category is selected (not "All Categories"), then filter products
+            if (value) {
+                initializeProductDisplay(value); // This will filter products on the same page
+            } else {
+                initializeProductDisplay(); // Show all featured products if "All Categories" is selected
+            }
+        });
+    </script>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            initializeProductDisplay(); // No category specified for homepage, shows all featured
+        });
+    </script>
+
+</body>
+</html>
